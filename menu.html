@@ -9,15 +9,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="">
         <section class="justify-center m-auto bg-orange-50 pb-6 pt-4 rounded-lg ">
           <nav class="flex m-auto justify-between container p-5">
-              <button class="btn bg-lime-400 active:bg-lime-800 active:text-white hover:bg-lime-600 font-bold">Blog</button>
+              <button class="btn bg-lime-400 active:bg-lime-800 active:text-white hover:bg-lime-600 font-bold">Home</button>
               <div class="lg:flex">
                   <img class="text-center justify-center m-auto" src="assets/logo.png" alt="">
-                  <h4 class="font-bold mt-auto pl-2 text-xl lg:text-3xl">Donate Bangladesh</h4>
+                  <h4 class="font-bold mt-auto pl-2 text-lg lg:text-3xl">Donate Bangladesh</h4>
               </div>
               <div class="lg:flex ">
                   <img src="assets/coin.png" alt="" class="text-center justify-center m-auto">
@@ -27,19 +28,47 @@
   
           </nav>
         </section>
-        <div class=" text-center justify-center m-auto mt-6">
-          <button class="btn btn-lg bg-lime-400 font-bold mr-6">Donation</button>
-          <Button class="btn btn-lg  font-bold">History</Button>
-        </div>
       </header>
       <main>
-        <section>
-            <div>
-                <h2>
+        <section class="container m-auto justify-center mt-10">
+            <div class="flex ">
+                <h2 class="font-extrabold text-2xl lg:text-5xl">
                     Important FAQ
                 </h2>
-                
+                <i class="fa-solid fa-circle-question "></i>
             </div>
+        </section>
+        <section class="container m-auto justify-center mt-7">
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What is the Document Objected Model (DOM) ?</div>
+                  <div class="collapse-content">
+                    <p>The DOM (Document Object Model) is a programming interface that represents the structure of a web page, allowing scripts to access and manipulate HTML and XML documents dynamically.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+                  <div class="collapse-content">
+                    <p>You can select an element from the DOM using `document.getElementById()`, `document.querySelector()`, `document.getElementsByClassName()`, or similar methods.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What is event delegation in context of the DOM, and why it is useful?</div>
+                  <div class="collapse-content">
+                    <p>Event delegation is a technique where a parent element handles events from its child elements through a single event listener, improving performance and supporting dynamic content.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">how do you manipulate element's attributes and style using the DOM?</div>
+                  <div class="collapse-content">
+                    <p>You can manipulate DOM element attributes with `setAttribute()` or `getAttribute()`, and modify styles using the `style` property (e.g., `element.style.property = 'value';`).</p>
+                  </div>
+                </div>
+              </div>
         </section>
       </main>
 </body>
