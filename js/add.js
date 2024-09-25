@@ -39,7 +39,6 @@ document.getElementById('feni-donation').addEventListener('click', function(even
         return;
     }
     else{
-        // const noakhaliCollection = document.getTextFieldValueById('noakhali-collection')
         const feniCollection = parseFloat(document.getElementById('feni-collection').innerText);
 
         const feniTotal = feniCollection + addMoneyFeni
@@ -66,7 +65,6 @@ document.getElementById('quota-donation').addEventListener('click', function(eve
         return;
     }
     else{
-        // const noakhaliCollection = document.getTextFieldValueById('noakhali-collection')
         const injuredCollection = parseFloat(document.getElementById('injured-collection').innerText);
 
         const quotaTotal = injuredCollection + donateInjured
