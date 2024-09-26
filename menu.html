@@ -15,7 +15,7 @@
     <header class="">
         <section class="justify-center m-auto bg-orange-50 pb-6 pt-4 rounded-lg ">
           <nav class="flex m-auto justify-between container p-5">
-              <button class="btn bg-lime-400 active:bg-lime-800 active:text-white hover:bg-lime-600 font-bold">Home</button>
+              <button id="home-btn" class="btn bg-lime-400 active:bg-lime-800 active:text-white hover:bg-lime-600 font-bold">Home</button>
               <div class="lg:flex">
                   <img class="text-center justify-center m-auto" src="assets/logo.png" alt="">
                   <h4 class="font-bold mt-auto pl-2 text-lg lg:text-3xl">Donate Bangladesh</h4>
@@ -71,5 +71,11 @@
               </div>
         </section>
       </main>
+      <script >
+        document.getElementById('home-btn').addEventListener('click', function (){
+        window.location.href = "index.html"
+        })
+      </script>
+      <script src="js/add-2.js"></script>
 </body>
 </html>
